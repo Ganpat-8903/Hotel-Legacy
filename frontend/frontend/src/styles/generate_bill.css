@@ -1,0 +1,80 @@
+.bill-page {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+.bill-page h2{
+    text-align: center;
+    background-color: var(--light);
+    color: #fff;
+}
+.bill-details {
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f4f4f9;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.bill-details:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.bill-details h3 {
+    margin-top: 0;
+    color: var(--dark);
+    font-size: 1.2em;
+    border-bottom: 2px solid var(--dark);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.bill-details p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.bill-details strong {
+    color: #333;
+}
+
+.error-message {
+    color: red;
+    font-size: 1.1em;
+    text-align: center;
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+}

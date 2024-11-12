@@ -1,0 +1,316 @@
+/* Container for the entire component */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centers the container horizontally */
+    padding: 20px;
+    /* Adds padding inside the container */
+    box-sizing: border-box;
+    /* Ensures padding is included in the width */
+}
+
+/* Heading styles */
+.container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    /* Increased space below the heading */
+    color: #fff;
+    background-color: var(--light);
+}
+
+/* Centering the add-booking section */
+.add-booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Aligns items in a column */
+    margin-bottom: 40px;
+    /* Space below the section */
+}
+
+/* Add booking section */
+.add-booking {
+    width: 100%;
+    max-width: 500px;
+    /* Limits the width of the section */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Added shadow for depth */
+}
+
+.add-booking h3 {
+    color: var(--light);
+    border-bottom: 2px solid var(--light);
+    text-align: center;
+}
+
+.add-booking input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.add-booking input[type="text"]:hover,
+.add-booking input[type="number"]:hover,
+.add-booking input[type="email"]:hover,
+.add-booking input[type="date"]:hover ,
+.add-booking select:hover{
+    border: 2px solid var(--light);
+}
+
+.add-booking button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--light);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.add-booking button:hover {
+    background-color: var(--dark);
+}
+
+.search-booking {
+    display: flex;
+    justify-content: center;
+    /* Center the input horizontally */
+    margin: auto;
+    /* Add some space around the input */
+}
+
+.search-booking input {
+    width: 100%;
+    /* Set a specific width for the input */
+    border: 1px solid #ccc;
+    font-size: 20px;
+    padding: 10px;
+
+    /* Increase the font size for better readability */
+    outline: none;
+    /* Remove the default outline on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+    transition: border-color 0.3s ease;
+    /* Smooth transition for border color */
+}
+
+.search-booking input:focus {
+    border-color: var(--light);
+    /* Change border color on focus */
+    box-shadow: 0 0 8px var(--light);
+    /* Enhance the shadow on focus */
+}
+
+.bookings-list {
+    margin-top: 40px;
+}
+
+.bookings-list h3 {
+    color: var(--dark);
+    border-bottom: 2px solid var(--light);
+    text-align: center;
+}
+
+.bookings-list table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #ddd;
+}
+
+.bookings-list th,
+td {
+    padding: 12px;
+    text-align: left;
+    border: 2px solid #ddd;
+}
+
+.bookings-list th {
+    background-color: #525050;
+    color: #fff;
+}
+
+/* Action buttons in table */
+.bookings-list button {
+    padding: 10px 15px;
+    border: none;
+    /* border-radius: 10px; */
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.edit-booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+/* Edit booking section */
+.edit-booking {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for input fields */
+.edit-booking input[type="text"],
+.edit-booking input[type="email"],
+.edit-booking input[type="date"],
+.edit-booking input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Styles for button */
+.edit-booking button {
+    padding: 10px 15px;
+    border: none;
+    /* border-radius: 4px; */
+    background-color: var(--light);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+}
+
+.edit-booking button:hover {
+    background-color: var(--dark);
+}
+
+/* Header style */
+.edit-booking h3 {
+    text-align: center;
+    color: var(--dark);
+    border-bottom: 2px solid var(--light);
+}
+
+/* Input fields hover effect */
+.edit-booking input[type="text"]:hover,
+.edit-booking input[type="email"]:hover,
+.edit-booking input[type="date"]:hover,
+.edit-booking input[type="number"]:hover {
+    border: 2px solid var(--light);
+}
+
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="date"] {
+        width: 100%;
+        margin: 5px 0 10px 0;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+label{
+    font-weight: bold;
+    color: var(--dark);
+    font-size: 20px;
+}
+/* Ensure buttons are aligned in a row */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust the space between buttons */
+    justify-content: flex-start; /* Align buttons to the left, you can change to center or space-between if needed */
+}
+
+/* Button styling */
+.generate-bill, .edit, .delete {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 120px;
+    font-weight: 700;
+    letter-spacing: 0.02cm;
+}
+
+/* Hover effects */
+.generate-bill:hover, .edit:hover, .delete:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Active state */
+.generate-bill:active, .edit:active, .delete:active {
+    background-color: #004080;
+    transform: translateY(0);
+}
+
+/* Focus state */
+.generate-bill:focus, .edit:focus, .delete:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Specific button color adjustments */
+.generate-bill {
+    background-color: #007bff;
+}
+
+.edit {
+    background-color: #28a745;
+    /* Green for edit */
+}
+
+.edit:hover {
+    background-color: #0ce13a;
+    /* Darker green on hover */
+}
+
+.delete {
+    background-color: #ad414c;
+    /* Red for delete */
+}
+
+/* Hover effects for specific buttons */
+.generate-bill:hover {
+    background-color: #0056b3;
+}
+
+.delete:hover {
+    background-color: #f3061e;
+    /* Darker red on hover */
+}

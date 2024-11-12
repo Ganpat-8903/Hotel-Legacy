@@ -1,0 +1,24 @@
+/* available_rooms.css */
+
+.custom-card-title {
+    font-size: 1.25rem; /* Adjust font size */
+    font-weight: bold;  /* Make title bold */
+    color: #343a40;     /* Darker color for better contrast */
+    text-align: center;
+}
+
+.custom-card-text {
+    font-size: 1rem;    /* Standard font size */
+    color: black;     /* Slightly lighter color for text */
+}
+
+/* Optional: Style for the card component */
+.card {
+    border: 1px solid var(--dark); /* Light border for card */
+    border-radius: 0.25rem;    /* Rounded corners */
+}
+
+.card-img-top {
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    height: 200px;     /* Set a fixed height for the images */
+}

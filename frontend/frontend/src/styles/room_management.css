@@ -1,0 +1,291 @@
+/* Container for the entire component */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centers the container horizontally */
+    padding: 20px;
+    /* Adds padding inside the container */
+    box-sizing: border-box;
+    /* Ensures padding is included in the width */
+}
+
+/* Heading styles */
+.container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    /* Increased space below the heading */
+    color: #fff;
+    background-color: var(--light);
+}
+
+/* Centering the add-room section */
+.add-room-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Aligns items in a column */
+    margin-bottom: 40px;
+    /* Space below the section */
+}
+
+/* Add room section */
+.add-room {
+    width: 100%;
+    max-width: 500px;
+    /* Limits the width of the section */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Added shadow for depth */
+
+}
+
+.add-room h3 {
+    color: var(--light);
+    border-bottom: 2px solid var(--light);
+    text-align: center;
+}
+
+.add-room input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.add-room input[type="text"]:hover,
+.add-room input[type="number"]:hover,
+.add-room input[type="file"]:hover {
+    border: 2px solid var(--light);
+}
+
+.add-room button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--light);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.add-room button:hover {
+    background-color: var(--dark);
+}
+
+.search-room {
+    display: flex;
+    justify-content: center;
+    /* Center the input horizontally */
+    margin: auto;
+    /* Add some space around the input */
+}
+
+.search-room input {
+    width: 100%;
+    /* Set a specific width for the input */
+    border: 1px solid #ccc;
+    font-size: 20px;
+    /* Increase the font size for better readability */
+    outline: none;
+    /* Remove the default outline on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+    transition: border-color 0.3s ease;
+    /* Smooth transition for border color */
+}
+
+.search-room input:focus {
+    border-color: var(--light);
+    /* Change border color on focus */
+    box-shadow: 0 0 8px var(--light);
+    /* Enhance the shadow on focus */
+}
+
+.search-room input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Centering the edit-room section */
+.edit-room-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Aligns items in a column */
+    margin-bottom: 40px;
+    /* Space below the section */
+}
+
+/* Edit room section */
+.edit-room {
+    width: 100%;
+    max-width: 500px;
+    /* Limits the width of the section */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Added shadow for depth */
+}
+
+/* Styles for input fields and buttons */
+.edit-room input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.edit-room button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--light);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.edit-room button:hover {
+    background-color: var(--dark);
+}
+
+.edit-room h3 {
+    text-align: center;
+    color: var(--dark);
+    border-bottom: 2px solid var(--light);
+}
+
+.edit-room input[type="text"]:hover,
+input[type="number"]:hover {
+    border: 2px solid var(--light)
+}
+
+/* Styles for the table */
+.rooms-list {
+    margin-top: 40px;
+}
+
+.rooms-list h3 {
+    color: var(--dark);
+    border-bottom: 2px solid var(--light);
+    text-align: center;
+}
+
+.rooms-list table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #ddd;
+}
+
+.rooms-list th,
+td {
+    padding: 12px;
+    text-align: left;
+    border: 2px solid #ddd;
+}
+
+.rooms-list th {
+    background-color: #525050;
+    color: #fff;
+}
+
+/* Action buttons in table */
+.rooms-list button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.edit {
+    background-color: #28a745;
+    /* Green for edit */
+}
+
+.edit:hover {
+    background-color: #0ce13a;
+    /* Darker green on hover */
+}
+
+.delete {
+    background-color: #ad414c;
+    /* Red for delete */
+}
+
+.delete:hover {
+    background-color: #f3061e;
+    /* Darker red on hover */
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.add-room select,
+.edit-room select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.add-room select:hover,
+.edit-room select:hover {
+    border: 2px solid var(--light)
+}
+
+/* Custom room type input styling */
+.add-room input[name="room_type_custom"],
+.edit-room input[name="room_type_custom"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+
+    input[type="text"],
+    input[type="number"] {
+        width: 100%;
+        margin: 5px 0 10px 0;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

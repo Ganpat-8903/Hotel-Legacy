@@ -1,0 +1,23 @@
+.about-us h1{
+    color: #fff; /* Darker text color */
+    background-color: var(--light);
+}
+
+.about-us h2{
+    color: var(--light) !important; /* Darker text color */
+    background-color: white !important;
+    border-bottom: 2px solid var(--dark);
+}
+
+.about-us p{
+    font-size: 1.2rem; /* Slightly larger font for the lead paragraph */
+}
+
+.about-us ul {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.about-us ul li {
+    margin-bottom: 0.5rem; /* Add some space between list items */
+}

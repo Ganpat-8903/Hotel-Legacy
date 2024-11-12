@@ -1,0 +1,15 @@
+.carousel-image {
+  width: 100%; 
+  height: 600px; 
+  object-fit: cover; 
+  filter: brightness(40%);
+}
+
+.carousel-heading{
+  font-weight: bold;
+  font-size: 50px;
+}
+.carousel-text{
+  font-weight: bold;
+  font-size: 30px;
+}

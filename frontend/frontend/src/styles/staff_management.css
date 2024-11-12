@@ -1,0 +1,282 @@
+/* Container for the entire component */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centers the container horizontally */
+    padding: 20px;
+    /* Adds padding inside the container */
+    box-sizing: border-box;
+    /* Ensures padding is included in the width */
+}
+
+/* Heading styles */
+.container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    /* Increased space below the heading */
+    color: #fff;
+    background-color: var(--light);
+}
+
+/* Centering the add-staff section */
+.add-staff-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Aligns items in a column */
+    margin-bottom: 40px;
+    /* Space below the section */
+}
+
+/* Add staff section */
+.add-staff {
+    width: 100%;
+    max-width: 500px;
+    /* Limits the width of the section */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Added shadow for depth */
+}
+
+.add-staff h3 {
+    color: var(--light);
+    border-bottom: 2px solid var(--light);
+    text-align: center;
+}
+
+.add-staff input[type="text"],
+input[type="email"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.add-staff input[type="text"]:hover,
+.add-staff input[type="email"]:hover,
+.add-staff input[type="file"]:hover {
+    border: 2px solid var(--light);
+}
+
+.add-staff button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--light);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.add-staff button:hover {
+    background-color: var(--dark);
+}
+
+/* Search staff */
+.search-staff {
+    display: flex;
+    justify-content: center;
+    /* Center the input horizontally */
+    margin: auto;
+    height: 50px;
+    /* Add some space around the input */
+}
+
+.search-staff input {
+    width: 100%;
+    /* Set a specific width for the input */
+    border: 1px solid #ccc;
+    font-size: 20px;
+    /* Increase the font size for better readability */
+    outline: none;
+    /* Remove the default outline on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+    transition: border-color 0.3s ease;
+    /* Smooth transition for border color */
+}
+
+.search-staff input:focus {
+    border-color: var(--light);
+    /* Change border color on focus */
+    box-shadow: 0 0 8px var(--light);
+    /* Enhance the shadow on focus */
+}
+
+/* Centering the edit-staff section */
+.edit-staff-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Aligns items in a column */
+    margin-bottom: 40px;
+    /* Space below the section */
+}
+
+/* Edit staff section */
+.edit-staff {
+    width: 100%;
+    max-width: 500px;
+    /* Limits the width of the section */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Added shadow for depth */
+}
+
+.edit-staff h3 {
+    text-align: center;
+    color: var(--dark);
+    border-bottom: 2px solid var(--light);
+}
+
+.edit-staff input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.edit-staff button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--light);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.edit-staff button:hover {
+    background-color: var(--dark);
+}
+
+.edit-staff input[type="text"]:hover,
+input[type="email"]:hover {
+    border: 2px solid var(--light);
+}
+
+/* Styles for the table */
+.staff-list {
+    margin-top: 40px;
+}
+
+.staff-list h3 {
+    color: var(--dark);
+    border-bottom: 2px solid var(--light);
+    text-align: center;
+}
+
+.staff-list table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #ddd;
+}
+
+.staff-list th,
+td {
+    padding: 12px;
+    text-align: left;
+    border: 2px solid #ddd;
+}
+
+.staff-list th {
+    background-color: #525050;
+    color: #fff;
+}
+
+/* Action buttons in table */
+.staff-list button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.edit {
+    background-color: #28a745;
+    /* Green for edit */
+}
+
+.edit:hover {
+    background-color: #0ce13a;
+    /* Darker green on hover */
+}
+
+.delete {
+    background-color: #ad414c;
+    /* Red for delete */
+}
+
+.delete:hover {
+    background-color: #f3061e;
+    /* Darker red on hover */
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.add-staff select,
+.edit-staff select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.add-staff select:hover,
+.edit-staff select:hover {
+    border: 2px solid var(--light);
+}
+
+/* Custom staff type input styling */
+.add-staff input[name="staff_type_custom"],
+.edit-staff input[name="staff_type_custom"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        margin: 5px 0 10px 0;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

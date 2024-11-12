@@ -1,0 +1,83 @@
+
+.sign-in {
+  /* width: 100%; */
+  /* max-width: 400px; */
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+
+}
+.login{
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  margin: auto;
+  height: auto;
+  width: 400px;
+}
+.login h1 {
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--light);
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--light);
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border:2ps solid var(--light);
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 111, 97, 0.2);
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: -8px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.button_common {
+  width: 100%;
+  padding: 12px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.button_common:hover {
+  background-color: var(--dark);
+}
+
+.link-signin {
+  display: block;
+  color: var(--light);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.link-signin:hover {
+  text-decoration: underline;
+}
